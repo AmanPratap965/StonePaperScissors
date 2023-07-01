@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://d3bzyjrsc4233l.cloudfront.net/company_office/rps.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" media="all">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ////////////////////////////////////////
+        heading div -->
+        <div class="title">
+            <h1 class="text">Rock Paper Scissors</h1>
+            <div class="loader">
+            <h2 class="text" >with AI</h2>
+        </div>
+        </div>
+        <!-- //////////////////////////////////////////////////
+        main div which for showcasing scores-->
+        <div class="main">
+            <h2 class="text">Score</h2>
+            <div class="allScores">
+
+                <div class="Human">
+                <h2 class="score-text" id="humanScore">0</h2>
+                <p class="black_text">Human</p>
+                <p class="text" id="H_selected"></p>
+                 </div>
+                <div class="ai">
+                <h2 class="score-text" id="aiScore">0</h2>
+                <p class="black_text">AI</p>
+                <p class="text" id="ai_selected"></p>
+
+            </div>
+        </div>
+            <!-- ////div for printing the Score -->
+            <div class="Score">
+                <p class="black_text" id="ScoreOutput">Start Game</p>
+            </div>
+            <!-- ///div for all the buttons and their respective functions -->
+            <div class="buttons">
+                    <div class="playButton">
+                        <button class="options" id="RockBtn" onclick="optionSelected(event)">Rock</button>
+                        <button class="options" id="PaperBtn" onclick="optionSelected(event)">Paper</button>
+                        <button class="options" id="ScissorsBtn" onclick="optionSelected(event)">Scissors</button>
+                    </div>
+                    <div class="reset">
+                        <button class="options" id="resetBtn" onclick="resetButton()">Reset</button>
+                    </div>
+                    <div class="gameCnt">
+                        <p class="black_text" id="gameCntp">Game count:0</p>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
